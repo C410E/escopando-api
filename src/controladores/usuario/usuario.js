@@ -2,7 +2,7 @@ const knex = require("../../conexao")
 const bcrypt = require("bcrypt")
 
 const cadastroUsuario = async (req, res) => {
-    const {username, senha} = req.body
+    const { username , senha } = req.body
 
     if (!username) {
         return res.status(404).json({mensagem: "O campo username é obrigatorio"})

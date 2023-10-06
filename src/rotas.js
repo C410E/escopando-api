@@ -5,7 +5,7 @@ const {
     atualizarPerfil 
 } = require("./controladores/usuario/usuario")
 const { login } = require("./controladores/usuario/login")
-const verificaLogin = require("./filtros/verificaLogin")
+const { verificaLogin } = require("./filtros/verificaLogin")
 
 const rotas = express()
 
