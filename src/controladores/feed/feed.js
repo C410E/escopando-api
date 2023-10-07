@@ -29,7 +29,7 @@ const feed = async (req, res) => {
 
             //fotos
             const fotos = await knex("postagens_fotos")
-                .where({ postagem_id: postagem.id})
+                .where({ postagem_id: postagem.usuario_id})
                 .select("imagem")
 
             postagem.fotos = fotos
